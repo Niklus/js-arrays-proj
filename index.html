@@ -1,0 +1,56 @@
+<div id="app"></div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Project</title>
+</head>
+<body>
+
+  <nav>
+    <h1>Classroom statistics</h1>
+</nav>
+
+<main>
+    <form id="grades-form">
+        <label class="label" for="component-name">Enter grade</label>
+        <input type="number" min="0" max="20" class="textbox" required placeholder="Grade (0 and 20)" id="your-grade">
+        <input type="submit" class="btn" value="Add" />
+    </form>
+
+        <div class="table-container">
+        <table border="1" id="stats-table">
+            <thead>
+                <tr>
+                    <th width="25%">Lowest</th>
+                    <th width="25%">Average</th>
+                    <th width="25%">Count</th>
+                    <th width="25%">Highest</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="table-container">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th width="33%">Passing</th>
+                    <th width="33%">Failing</th>
+                    <th>Raised</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="passing-grades"></td>
+                    <td id="failing-grades" class="failing"></td>
+                    <td id="raised-grades"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+
+</body>
+</html>
